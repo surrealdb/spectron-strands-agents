@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spectron-strands"
+version = "0.1.0"
+description = "Spectron agent memory as tools for the Strands Agents SDK."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "SurrealDB" }]
+keywords = ["spectron", "surrealdb", "strands", "agents", "memory", "llm"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "strands-agents>=1.0",
+    "surrealdb",
+]
+
+[project.optional-dependencies]
+bedrock = ["strands-agents[bedrock]>=1.0"]
+dev = ["pytest>=8.0"]
+
+[project.urls]
+Homepage = "https://surrealdb.com/platform/spectron"
+Documentation = "https://surrealdb.com/docs/spectron"
+Strands = "https://strandsagents.com"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/spectron_strands"]
