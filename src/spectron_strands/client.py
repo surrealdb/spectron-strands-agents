@@ -1,6 +1,7 @@
 """Construction of the Spectron client used by the tools.
 
-The Spectron client lives in the ``surrealdb`` package (``pip install surrealdb``).
+The Spectron client lives in the ``surrealdb`` package, v3 alpha or later
+(``pip install "surrealdb>=3.0.0a1"``).
 It is imported lazily so that importing ``spectron_strands`` never requires a
 configured environment, and so a missing dependency produces a clear message
 rather than an import error at package load time.
@@ -69,7 +70,8 @@ def build_client(
     except ImportError as exc:  # pragma: no cover - exercised only without surrealdb
         raise ImportError(
             "The 'surrealdb' package is required for the Spectron client. "
-            "Install it with: pip install surrealdb"
+            "Spectron ships in the v3 alpha; install it with: "
+            'pip install "surrealdb>=3.0.0a1"'
         ) from exc
 
     return Spectron(

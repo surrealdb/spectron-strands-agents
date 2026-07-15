@@ -1,6 +1,6 @@
 # Examples
 
-These scripts show `spectron-strands` in use with a real Strands agent. They use
+These scripts show `spectron-strand-agents` in use with a real Strands agent. They use
 Amazon Bedrock, the default Strands model provider.
 
 ## Setup
@@ -8,7 +8,7 @@ Amazon Bedrock, the default Strands model provider.
 Install the package with the Bedrock extra:
 
 ```bash
-pip install "spectron-strands[bedrock]"
+pip install "spectron-strand-agents[bedrock]"
 ```
 
 Point the tools at your Spectron instance:
