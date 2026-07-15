@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "spectron-strand-agents"
+name = "spectron-strands-agents"
 version = "0.1.0"
 description = "Spectron agent memory as tools for the Strands Agents SDK."
 readme = "README.md"

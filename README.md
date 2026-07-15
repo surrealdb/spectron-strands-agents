@@ -1,4 +1,4 @@
-# spectron-strand-agents
+# spectron-strands-agents
 
 Spectron agent memory as tools for the [Strands Agents](https://strandsagents.com) SDK.
 
@@ -17,11 +17,11 @@ print(agent("What is the value of the Meditech Solutions contract?"))
 ## Installation
 
 ```bash
-pip install spectron-strand-agents
+pip install spectron-strands-agents
 ```
 
 ```bash
-pip install "spectron-strand-agents[bedrock]"
+pip install "spectron-strands-agents[bedrock]"
 ```
 
 Requires Python 3.10 or newer.
